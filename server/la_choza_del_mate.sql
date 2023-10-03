@@ -32,26 +32,27 @@ CREATE TABLE `datos_productos` (
   `img` varchar(40) NOT NULL,
   `nombre` varchar(40) NOT NULL,
   `precio` varchar(15) NOT NULL,
-  `cantidad` int(4) NOT NULL
+  `cantidad` int(4) NOT NULL,
+  `tipo` varchar(40) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Volcado de datos para la tabla `datos_productos`
 --
 
-INSERT INTO `datos_productos` (`id`, `img`, `nombre`, `precio`, `cantidad`) VALUES
-(1, 'img/imperial-1.webp', 'Mate Imperial marron con alpaca', '9.000$', 2),
-(2, 'img/torpedo.webp', 'Mate Torpedo ', '6.000$', 3),
-(3, 'img/camionero.webp', 'Mate Camionero', '5.500$', 2),
-(4, 'img/termo acero.jpeg', 'Termo media manija de acero', '9.500$', 5),
-(7, 'img/termo negro.jpeg', 'Termo media manija negro', '11.500$', 3),
-(8, 'img/imperial marron.jpg', 'Mate Imperial marron con bombilla', '12.500$', 2),
-(9, 'img/imperial negro.jpg', 'Mate Imperial negro de alpaca', '10.500$', 3),
-(10, 'img/bombilla-1.jpeg', 'Bombilla de alpaca cincelada', '5.000$', 7),
-(11, 'img/bombilla resorte.jpg', 'Bombilla de resorte simple', '3.300$', 2),
-(12, 'img/yerba_kraus.jpg', 'Yerba Kraus 500G', '1.000$', 3),
-(13, 'img/yerba_baldo.jpg', 'Yerba Baldo 1Kg', '1.120$', 2),
-(14, 'img/yerba_canarias.jpg', 'Yerba Canarias de 1kg', '1.700$', 5);
+INSERT INTO `datos_productos` (`id`, `img`, `nombre`, `precio`, `cantidad`,`tipo`) VALUES
+(1, 'img/imperial-1.webp', 'Mate Imperial marron con alpaca', '9.000$', 2,"imperial"),
+(2, 'img/torpedo.webp', 'Mate Torpedo ', '6.000$', 3,"torpedo"),
+(3, 'img/camionero.webp', 'Mate Camionero', '5.500$', 2,"camionero"),
+(4, 'img/termo acero.jpeg', 'Termo media manija de acero', '9.500$', 5,"termo"),
+(7, 'img/termo negro.jpeg', 'Termo media manija negro', '11.500$', 3,"termo"),
+(8, 'img/imperial marron.jpg', 'Mate Imperial marron con bombilla', '12.500$', 2,"imperial"),
+(9, 'img/imperial negro.jpg', 'Mate Imperial negro de alpaca', '10.500$', 3,"imperial"),
+(10, 'img/bombilla-1.jpeg', 'Bombilla de alpaca cincelada', '5.000$', 7,"bombilla"),
+(11, 'img/bombilla resorte.jpg', 'Bombilla de resorte simple', '3.300$', 2,"bombilla"),
+(12, 'img/yerba_kraus.jpg', 'Yerba Kraus 500G', '1.000$', 3,"yerbas"),
+(13, 'img/yerba_baldo.jpg', 'Yerba Baldo 1Kg', '1.120$', 2,"yerbas"),
+(14, 'img/yerba_canarias.jpg', 'Yerba Canarias de 1kg', '1.700$', 5,"yerbas");
 
 -- --------------------------------------------------------
 

@@ -211,7 +211,7 @@ $resultproductos = mysqli_query($conexionDatos, $queryproductos);
 
             <?php
                 while($productoObj =mysqli_fetch_array($resultproductos)){
-                    echo(' <div class="articulo imperial ">' );
+                    echo(' <div class= "articulo ' . $productoObj[5]' " ' );
                     echo(' <img src="' . $productoObj[1] . '" alt="imperial">');
                     echo('<p class="product-name">'.$productoObj[2].'</p>');
                     echo(' <p class="product-price">'.$productoObj[3].'</p>');
